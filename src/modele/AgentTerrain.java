@@ -106,7 +106,7 @@ public class AgentTerrain extends Agent {
     public void render(Graphics g) {
         //Terrain
         try {
-            BufferedImage imgTerrain = ImageIO.read(new File("src/resources/terrain.jpg"));
+            BufferedImage imgTerrain = ImageIO.read(new File("src/resources/t2.png"));
             g.drawImage(imgTerrain, 1, 1, ReglesDuJeu.LONGUEUR_TERRAIN, ReglesDuJeu.LARGEUR_TERRAIN, null);
         } catch (IOException e) {
             e.printStackTrace();

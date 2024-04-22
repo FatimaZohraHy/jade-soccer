@@ -59,8 +59,8 @@ public class AgentJoueur extends GameObject {
         }
         Random rand = new Random();
         rand.setSeed(System.currentTimeMillis());
-        vitesse = rand.nextInt(400);
-        tacles = rand.nextInt(100);
+        vitesse = rand.nextInt(600);
+        tacles = rand.nextInt(200);
         dribles = (rand.nextInt(80) + 20);
         arrets = (rand.nextInt(100));
         tirs = (rand.nextInt(80) + 20);

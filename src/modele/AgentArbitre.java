@@ -51,23 +51,23 @@ public class AgentArbitre extends GameObject {
 
     @Override
     public void render(Graphics g) {
-        int minutes = tempsDeJeu / 60;
-        int secondes = tempsDeJeu % 60;
+        //int minutes = tempsDeJeu / 60;
+       // int secondes = tempsDeJeu % 60;
         StringBuilder sb = new StringBuilder();
-        sb.append("[Equipe1] ")
+        sb.append("[TEAM 1] ")
                 .append(scoreEquipe1)
                 .append("-")
                 .append(scoreEquipe2)
-                .append(" [Equipe2] | [");
-        if (minutes < 10)
-            sb.append("0");
-        sb.append(minutes);
+                .append(" [TEAM 2]");
+       /* if (minutes < 10)
+          //  sb.append("0");
+     //   sb.append(minutes);
         sb.append(":");
         if (secondes < 10)
             sb.append("0");
         sb.append(secondes);
-        sb.append("]");
-        g.setColor(Color.BLACK);
+        sb.append("]");*/
+        g.setColor(new Color(0, 51, 102));
         g.drawString(sb.toString(), 20, 20);
     }
 
