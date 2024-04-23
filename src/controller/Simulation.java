@@ -116,27 +116,33 @@ public class Simulation extends Canvas implements Runnable {
 
 
         ArrayList<AgentController> joueurs = new ArrayList<>();
-        joueurs.add(agentContainer.createNewAgent("Hakimi",
+        joueurs.add(agentContainer.createNewAgent("luffy",
                 AgentJoueur.class.getName(), argsJoueur1));
-        joueurs.add(agentContainer.createNewAgent("Hafidi",
+        joueurs.add(agentContainer.createNewAgent("zorro",
                 AgentJoueur.class.getName(), argsJoueur2));
-        joueurs.add(agentContainer.createNewAgent("Benzema",
+        joueurs.add(agentContainer.createNewAgent("naruto",
                 AgentJoueur.class.getName(), argsJoueur3));
-        joueurs.add(agentContainer.createNewAgent("Gignac",
+        joueurs.add(agentContainer.createNewAgent("itachi",
                 AgentJoueur.class.getName(), argsJoueur4));
 
         if (ReglesDuJeu.NBJOUEURS >= 5) {
             Object[] argsJoueur5 = getArgsJoueur(
                     agentHandler, false, 1, 2,
                     new Position(ReglesDuJeu.MILIEU_DE_TERRAIN.getX() / 2, ReglesDuJeu.MILIEU_DE_TERRAIN.getY() / 2));
-            joueurs.add(agentContainer.createNewAgent("Varane",
+            joueurs.add(agentContainer.createNewAgent("alen",
                     AgentJoueur.class.getName(), argsJoueur5));
+           
+            
+            //our case
             if (ReglesDuJeu.NBJOUEURS >= 6) {
                 Object[] argsJoueur6 = getArgsJoueur(
-                        agentHandler, false, 1, 3,
-                        new Position(ReglesDuJeu.MILIEU_DE_TERRAIN.getX() / 2, ReglesDuJeu.MILIEU_DE_TERRAIN.getY() * 3 / 2));
-                joueurs.add(agentContainer.createNewAgent("Pogba",
+                        agentHandler, false, 2, 3,
+                        new Position(ReglesDuJeu.MILIEU_DE_TERRAIN.getX()*3/2, ReglesDuJeu.MILIEU_DE_TERRAIN.getY()*3/2));
+                joueurs.add(agentContainer.createNewAgent("hanato",
                         AgentJoueur.class.getName(), argsJoueur6));
+                
+                
+                
                 if (ReglesDuJeu.NBJOUEURS >= 7) {
                     Object[] argsJoueur7 = getArgsJoueur(agentHandler, false, 2, 2,
                             new Position(ReglesDuJeu.MILIEU_DE_TERRAIN.getX() * 3 / 2, ReglesDuJeu.MILIEU_DE_TERRAIN.getY() / 2));
